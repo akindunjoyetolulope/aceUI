@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import media from "src/styles/media";
 import Chip from "src/assets/chip.png";
 import Wifi from "src/assets/wifi.png";
+import Docket from "src/assets/docket.png";
 import { ReactComponent as Apple } from "src/assets/apple-13.svg";
 import { ReactComponent as CardLogo } from "src/assets/mastercard-2.svg";
 
@@ -77,6 +78,7 @@ const CardDesgin = () => {
                 <span className="symbol">USD</span>
               </div>
             </div>
+            <img src={Docket} alt=""></img>
           </div>
         </div>
       </div>
@@ -91,7 +93,7 @@ const Container = styled.div`
   background-color: white;
   margin-left: 20px;
 
-  ${media.mobile} {
+  ${media.smallDesktop} {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -101,7 +103,7 @@ const Container = styled.div`
     margin-left: 10px;
     right: 5px;
 
-    ${media.mobile} {
+    ${media.smallDesktop} {
       right: 0px;
     }
 
@@ -129,17 +131,24 @@ const Container = styled.div`
       left: 50%;
       transform: translate(-50%, 0);
 
-      ${media.mobile} {
+      ${media.smallDesktop} {
         left: 45%;
       }
 
       .purchase-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #f0f3f8;
         position: relative;
         top: 220px;
         padding: 1rem 2rem;
         border-bottom-right-radius: 16px;
         border-bottom-left-radius: 16px;
+
+        img {
+          height: 1.6em;
+        }
 
         .total {
           .desc {
@@ -168,9 +177,9 @@ const Container = styled.div`
               font-weight: 700;
 
               sub {
-                font-size: 0.6em;
+                font-size: 0.4em;
                 position: relative;
-                bottom: 1px;
+                /* bottom: 1px; */
                 font-weight: 500;
               }
             }
@@ -329,7 +338,7 @@ const Container = styled.div`
     }
   }
 
-  ${media.mobile} {
+  ${media.smallDesktop} {
     width: 100%;
     background-color: white;
   }

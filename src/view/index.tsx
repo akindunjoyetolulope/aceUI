@@ -39,7 +39,7 @@ const Container = styled.div`
   background-color: #17254c;
   height: 100vh;
 
-  ${media.mobile} {
+  ${media.smallDesktop} {
     width: 100%;
     flex-direction: column;
     height: 100%;
@@ -52,7 +52,7 @@ const Container = styled.div`
     margin: 40px 40px;
     background-color: white;
 
-    ${media.mobile} {
+    ${media.smallDesktop} {
       padding: 20px 10px;
       flex-direction: column;
       margin: 0px;
