@@ -108,7 +108,7 @@ const Sections = styled.div`
     /* gap: 1px; */
     /* border: 1px solid red; */
 
-    ${media.mobile} {
+    ${media.smallDesktop} {
       display: block;
       input {
         margin-top: 25px;
